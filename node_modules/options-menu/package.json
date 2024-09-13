@@ -1,0 +1,31 @@
+{
+  "name": "options-menu",
+  "version": "1.0.0",
+  "description": "A command-line options menu builder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gnavalesi/options-menu.git"
+  },
+  "keywords": [
+    "command",
+    "line",
+    "options",
+    "menu"
+  ],
+  "author": "Guido Navalesi",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/gnavalesi/options-menu/issues"
+  },
+  "homepage": "https://github.com/gnavalesi/options-menu#readme",
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "istanbul": "^0.4.4",
+    "mocha": "^2.5.3",
+    "underscore": "^1.8.3"
+  }
+}

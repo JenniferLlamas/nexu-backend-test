@@ -47,6 +47,7 @@ The structure of the project is a little different than what we usually do due t
 I noticed that the project does not require pagination of the data, so I did not apply it. But in a real proyect this slows down frontend performance.
 I laid the foundations for the pagination that I usually use in the models.
 
-
+## DB Diagram
+[![nexu-db-1.jpg](https://i.postimg.cc/gJwJ03bR/nexu-db-1.jpg)](https://postimg.cc/8JSDKJ5P)
 
 

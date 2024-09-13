@@ -11,11 +11,7 @@ const { ObjectId } = mongoose.Types;
  */
 class ModelsController {
   /**
-   * @static
-   * @memberof ModelsController
-   *
-   * @function update
-   * @description
+   * @description update the average_price of the model and update brand average_price
    * */
   static update = async ({ body, params }, response) => {
     Models.findOne({ _id: new ObjectId(params.id) })
@@ -51,30 +47,7 @@ class ModelsController {
   };
 
   /**
-   * @static
-   * @memberof ModelsController
-   *
-   * @function get
-   * @description
-   * */
-  static get = async ({ query, params }, response) => {
-    let model = await Models.findOne({
-      _id: new ObjectId(params.model_id),
-    });
-    if (model == null)
-      return response.status(400).json(
-        "The model don't exist",
-      );
-
-    return response.status(200).json(model);
-  };
-
-  /**
-   * @static
-   * @memberof ModelsController
-   *
-   * @function list
-   * @description
+   * @description get all the models
    * */
   static list = async ({ query }, response) => {
     let pipeline = [

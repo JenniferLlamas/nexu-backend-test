@@ -29,7 +29,7 @@ const Models = new Schema(
 );
 
 /**
- * Update the brand average_price on save a model if the average_price is defined
+ * Update the brand average_price and set id autoincremental
  */
 Models.pre("save", async function () {
   if (this.average_price != undefined) {

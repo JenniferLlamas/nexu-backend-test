@@ -6,7 +6,7 @@ const Decimal = require('decimal.js');
 const { ObjectId } = mongoose.Types;
 /**
  * @class BrandsController
- * @description
+ * @description Contains all the endpoints for model brand 
  */
 class BrandsController {
   /**
@@ -26,8 +26,9 @@ class BrandsController {
       .then((brand) => response.status(200).json(brand))
       .catch((error) => response.status(400).json(error));
   };
+
   /**
-   * @description
+   * @description add a new model to the brand sended by params
    * */
   static addModels = async ({ body, params }, response) => {
 
@@ -61,7 +62,7 @@ class BrandsController {
   };
 
   /**
-   * @description
+   * @description get all the models of the brand
    * */
   static getModels = async ({ query, params }, response) => {
     let id = query.id || params.id;
@@ -83,7 +84,7 @@ class BrandsController {
   };
 
   /**
-   * @description
+   * @description get all the brands
    * */
   static list = async ({ query }, response) => {
     let data = await Brands.find({})

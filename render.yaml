@@ -1,0 +1,19 @@
+# Exported from Render on 2024-09-13T01:53:11Z
+services:
+- type: pserv
+  name: nexu-backend-test
+  runtime: node
+  repo: https://github.com/JenniferLlamas/nexu-backend-test
+  branch: main
+  plan: starter
+  envVars:
+  - key: MINIMAL_AVERAGE_PRICE
+    sync: false
+  - key: PORT
+    sync: false
+  - key: DB_CONNECT
+    sync: false
+  region: oregon
+  buildCommand: npm install
+  startCommand: node server.js
+version: "1"

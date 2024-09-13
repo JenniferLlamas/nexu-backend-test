@@ -22,7 +22,7 @@ const Brands = new Schema(
 );
 /**
  *
- * @description  set the id aaverage_price of the brand and save it
+ * @description  set the id of the brand 
  */
 Brands.pre("save", async function () {
   if (!this.id) {

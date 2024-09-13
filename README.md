@@ -51,3 +51,8 @@ I laid the foundations for the pagination that I usually use in the models.
 [![nexu-db-1.jpg](https://i.postimg.cc/gJwJ03bR/nexu-db-1.jpg)](https://postimg.cc/8JSDKJ5P)
 
 
+## Deploy URL
+Web Services is available online:\
+Open [https://nexu-backend.onrender.com/](https://nexu-backend.onrender.com/) to view it in your browser.
+
+
